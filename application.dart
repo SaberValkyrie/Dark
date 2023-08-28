@@ -50,10 +50,9 @@
         print("4. Danh Sách");
         print("5. Exit");
 
+        var input = stdin.readLineSync();
 
         try {
-          var input = stdin.readLineSync();
-
           var choice = int.parse(input!);
 
           switch (choice) {
@@ -124,7 +123,7 @@
               print("Choose not found");
           }
         } catch (e) {
-          print("Lựa chọn không hợp lệ, vui lòng nhập số nguyên.");
+          print("");
         }
       }
     }
