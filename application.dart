@@ -50,9 +50,10 @@
         print("4. Danh Sách");
         print("5. Exit");
 
-        var input = stdin.readLineSync();
 
         try {
+          var input = stdin.readLineSync();
+
           var choice = int.parse(input!);
 
           switch (choice) {
